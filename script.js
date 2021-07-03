@@ -30,6 +30,7 @@ const workSlider = new Swiper('.works__slider', {
 
 });
 
+
 $('.header__btn').on('click', function(){
     $('.slider').addClass('transform');
     $('.nav').addClass('active');
@@ -56,13 +57,10 @@ $('.nav a').on('click', function(e){
     }, 800);
 });
 
-swiper.on('transitionStart', function(){
-    $('.slider__pagination p').removeClass('active');
-    let id = $('.swiper-slide-active').data(id);
-    $(id).addClass('active');
-    
-});
 
+swiper.on('scroll', function(){
+    $('.slider__pagination p').addClass('active');
+});
 
 $('.slider__pagination p').on('click', function(){
     $('.slider__pagination p').removeClass('active');
