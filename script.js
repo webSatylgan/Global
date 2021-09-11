@@ -10,6 +10,7 @@ const swiper = new Swiper('.slider', {
     slidesPerView: 1,
     loop: true,
     speed: 700,
+    allowTouchMove:false,
 
     mousewheel: {
         invert: true,
