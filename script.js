@@ -24,8 +24,8 @@ const workSlider = new Swiper('.works__slider', {
     centeredSlides: true,
 
     navigation: {
-        nextEl: '.arrow-next',
-        prevEl: '.arrow-prev',
+        nextEl: '.intro__arrow-next',
+        prevEl: '.intro__arrow-prev',
     },
 
 });
